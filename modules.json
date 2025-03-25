@@ -1,0 +1,22 @@
+{
+    "name": "",
+    "homePage": "",
+    "repos": {
+        "https://github.com/nf-core/modules.git": {
+            "modules": {
+                "nf-core": {
+                    "mafft/align": {
+                        "branch": "master",
+                        "git_sha": "fa92936611247ca647ddee970f94d83f1bcb0ffe",
+                        "installed_by": [
+                            "modules"
+                        ]
+                    }
+                }
+            },
+            "subworkflows": {
+                "nf-core": {}
+            }
+        }
+    }
+}
