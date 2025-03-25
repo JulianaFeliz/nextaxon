@@ -15,13 +15,6 @@ workflow CLASSIFICATION {
     // Executa análise Mothur
     MOTHUR_ANALYSIS(input_dir, output_dir, ref_1806DB_fasta, ref_1806DB_tax, ref_629_aln_cut)
 
-    
-    // Prepara inputs para MAFFT_ALIGN
-    mafft_input = MOTHUR_ANALYSIS.out.rep_fasta.map { sample_id, fasta ->
-        def meta = [id: sample_id]
-        [ meta, fasta, [], [], [], [], [], false ]
-    }
-
 
     // Executa alinhamento MAFFT nas sequências representativas
     MAFFT_ALIGN(MOTHUR_ANALYSIS.out.rep_fasta)

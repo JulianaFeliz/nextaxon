@@ -1,2 +1,2 @@
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
-1	9f/3c487c	28513	CLASSIFICATION:MOTHUR_ANALYSIS (mothur_analysis)	ABORTED	-	2025-03-25 22:43:26.927	-	-	-	-	-	-	-
+1	0c/56e480	68721	CLASSIFICATION:MOTHUR_ANALYSIS (mothur_analysis)	ABORTED	-	2025-03-25 23:42:02.035	-	-	-	-	-	-	-
