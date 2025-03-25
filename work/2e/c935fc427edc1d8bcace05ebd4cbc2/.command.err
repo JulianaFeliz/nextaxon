@@ -1,0 +1,44 @@
+Unable to find image 'quay.io/biocontainers/mothur:1.38.1.1--boost1.60_0' locally
+1.38.1.1--boost1.60_0: Pulling from biocontainers/mothur
+a3ed95caeb02: Pulling fs layer
+77c6c00e8b61: Pulling fs layer
+3aaade50789a: Pulling fs layer
+00cf8b9f3d2a: Pulling fs layer
+7ff999a2256f: Pulling fs layer
+d2ba336f2e44: Pulling fs layer
+dfda3e01f2b6: Pulling fs layer
+10c3bb32200b: Pulling fs layer
+ade28a0dafe4: Pulling fs layer
+ade28a0dafe4: Waiting
+d2ba336f2e44: Waiting
+dfda3e01f2b6: Waiting
+10c3bb32200b: Waiting
+00cf8b9f3d2a: Waiting
+7ff999a2256f: Waiting
+a3ed95caeb02: Verifying Checksum
+a3ed95caeb02: Download complete
+3aaade50789a: Verifying Checksum
+3aaade50789a: Download complete
+a3ed95caeb02: Pull complete
+77c6c00e8b61: Verifying Checksum
+77c6c00e8b61: Download complete
+7ff999a2256f: Download complete
+77c6c00e8b61: Pull complete
+00cf8b9f3d2a: Verifying Checksum
+00cf8b9f3d2a: Download complete
+3aaade50789a: Pull complete
+00cf8b9f3d2a: Pull complete
+7ff999a2256f: Pull complete
+10c3bb32200b: Download complete
+dfda3e01f2b6: Verifying Checksum
+dfda3e01f2b6: Download complete
+d2ba336f2e44: Download complete
+d2ba336f2e44: Pull complete
+dfda3e01f2b6: Pull complete
+10c3bb32200b: Pull complete
+ade28a0dafe4: Verifying Checksum
+ade28a0dafe4: Download complete
+ade28a0dafe4: Pull complete
+Digest: sha256:36d577cba6f335c2810c3df8cedca881521d8b9c22a2aeffdf2647ea4cc72deb
+Status: Downloaded newer image for quay.io/biocontainers/mothur:1.38.1.1--boost1.60_0
+TERM environment variable not set.

@@ -1,0 +1,70 @@
+Mar-25 19:10:44.892 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Mar-25 19:10:44.969 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.4
+Mar-25 19:10:45.011 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/workspaces/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.3,nf-tower@1.9.3,nf-wave@1.7.4
+Mar-25 19:10:45.056 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-25 19:10:45.057 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-25 19:10:45.061 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Mar-25 19:10:45.080 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-25 19:10:45.111 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /root/nextaxon/nextflow.config
+Mar-25 19:10:45.116 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /root/nextaxon/nextflow.config
+Mar-25 19:10:45.168 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /workspaces/.nextflow/secrets/store.json
+Mar-25 19:10:45.173 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@5491f68b] - activable => nextflow.secret.LocalSecretsProvider@5491f68b
+Mar-25 19:10:45.181 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-25 19:10:45.819 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Mar-25 19:10:45.837 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [suspicious_mestorf] DSL2 - revision: 19409b09ea
+Mar-25 19:10:45.839 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-25 19:10:45.839 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-25 19:10:45.901 [main] DEBUG nextflow.Session - Session UUID: 75a93e88-8ff9-4a60-9bff-d010016b5f1c
+Mar-25 19:10:45.902 [main] DEBUG nextflow.Session - Run name: suspicious_mestorf
+Mar-25 19:10:45.902 [main] DEBUG nextflow.Session - Executor pool size: 4
+Mar-25 19:10:45.916 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-25 19:10:45.922 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-25 19:10:45.964 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.4 build 5934
+  Created: 20-01-2025 16:47 UTC 
+  System: Linux 6.8.0-1021-azure
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 21.0.5+11-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 25101@codespaces-3b58cb [127.0.0.1]
+  CPUs: 4 - Mem: 15.6 GB (232.5 MB) - Swap: 0 (0)
+Mar-25 19:10:45.993 [main] DEBUG nextflow.Session - Work-dir: /root/nextaxon/work [overlayfs]
+Mar-25 19:10:45.994 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /root/nextaxon/bin
+Mar-25 19:10:46.008 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-25 19:10:46.021 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-25 19:10:46.067 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-25 19:10:46.077 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Mar-25 19:10:46.166 [main] DEBUG nextflow.Session - Session start
+Mar-25 19:10:46.169 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /root/nextaxon/resultados/pipeline_info/execution_trace.txt
+Mar-25 19:10:46.297 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-25 19:10:46.977 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MOTHUR_ANALYSIS` matches process CLASSIFICATION:MOTHUR_ANALYSIS
+Mar-25 19:10:46.993 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-25 19:10:46.994 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-25 19:10:47.000 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-25 19:10:47.008 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=15.6 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Mar-25 19:10:47.011 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Mar-25 19:10:47.099 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MAFFT_ALIGN` matches process CLASSIFICATION:MAFFT_ALIGN
+Mar-25 19:10:47.101 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-25 19:10:47.101 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-25 19:10:47.109 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: MAFFT_ALIGN, CLASSIFICATION:MAFFT_ALIGN, CLASSIFICATION:MOTHUR_ANALYSIS, MOTHUR_ANALYSIS
+Mar-25 19:10:47.110 [main] DEBUG nextflow.Session - Igniting dataflow network (7)
+Mar-25 19:10:47.116 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /mnt/c/Users/julia/nextaxon/data/; pattern: *_R{1,2}_001.fastq; options: [:]
+Mar-25 19:10:47.119 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CLASSIFICATION:MOTHUR_ANALYSIS
+Mar-25 19:10:47.119 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CLASSIFICATION:MAFFT_ALIGN
+Mar-25 19:10:47.120 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_5a9e467c9b5aacec: /root/nextaxon/./workflows/classification.nf
+  Script_55608c934718c4cf: /root/nextaxon/./workflows/../modules/local/mothur.nf
+  Script_67ec53c728e33915: /root/nextaxon/main.nf
+  Script_51a4f16982872592: /root/nextaxon/./workflows/../modules/nf-core/mafft/align/main.nf
+Mar-25 19:10:47.120 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-25 19:10:47.120 [main] DEBUG nextflow.Session - Session await
+Mar-25 19:10:47.125 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - No such file or directory: /mnt/c/Users/julia/nextaxon/data/ -- Skipping visit
+Mar-25 19:10:47.134 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-25 19:10:47.216 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Mar-25 19:10:47.217 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-25 19:10:47.222 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Mar-25 19:10:47.222 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Mar-25 19:10:47.223 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Mar-25 19:10:47.748 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Mar-25 19:10:48.004 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-25 19:10:48.023 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Mar-25 19:10:48.023 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,3 @@
+Unable to find image 'quay.io/biocontainers/mothur:1.48.0--h7d875b9_0' locally
+docker: Error response from daemon: manifest for quay.io/biocontainers/mothur:1.48.0--h7d875b9_0 not found: manifest unknown: manifest unknown.
+See 'docker run --help'.

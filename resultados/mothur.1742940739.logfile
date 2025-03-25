@@ -1,0 +1,206 @@
+Linux version
+
+Using ReadLine
+
+Running 64Bit Version
+
+mothur v.1.38.1
+Last updated: 8/9/2016
+
+by
+Patrick D. Schloss
+
+Department of Microbiology & Immunology
+University of Michigan
+pschloss@umich.edu
+http://www.mothur.org
+
+When using, please cite:
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+
+Distributed under the GNU General Public License
+
+Type 'help()' for information on the commands that are available
+
+Type 'quit()' to exit program
+Script Mode
+
+
+mothur > make.file(inputdir=UFRN-D1_R1_001.fastq UFRN-D1_R2_001.fastq, outputdir=resultados, type=fastq, prefix=spun)
+Setting output directory to: resultados/
+UFRN-D1_R1_001.fastq UFRN-D1_R2_001.fastq/ directory does not exist or is not writable.
+UFRN-D1_R1_001.fastq/ directory does not exist or is not writable.
+[ERROR]: did not complete make.file.
+
+mothur > 
+make.contigs(inputdir=UFRN-D1_R1_001.fastq UFRN-D1_R2_001.fastq, outputdir=resultados, file=spun.files, processors=1)
+Setting output directory to: resultados/
+UFRN-D1_R1_001.fastq UFRN-D1_R2_001.fastq/ directory does not exist or is not writable.
+Unable to open UFRN-D1_R1_001.fastqspun.files. Trying default /usr/local/bin/UFRN-D1_R1_001.fastqspun.files
+Unable to open /usr/local/bin/UFRN-D1_R1_001.fastqspun.files. Trying mothur's location /usr/local/bin/UFRN-D1_R1_001.fastqspun.files
+Unable to open /usr/local/bin/UFRN-D1_R1_001.fastqspun.files. Trying output directory resultados/UFRN-D1_R1_001.fastqspun.files
+Unable to open resultados/UFRN-D1_R1_001.fastqspun.files
+
+Using 1 processors.
+[ERROR]: did not complete make.contigs.
+
+mothur > 
+screen.seqs(fasta=current, group=current, maxambig=4, minlength=300, maxlength=580, maxhomop=22)
+[WARNING]: no file was saved for fasta parameter.
+[WARNING]: no file was saved for group parameter.
+You have no current fastafile and the fasta parameter is required.
+
+Using 1 processors.
+[ERROR]: did not complete screen.seqs.
+
+mothur > 
+unique.seqs()
+You have no current fastafile and the fasta parameter is required.
+[ERROR]: did not complete unique.seqs.
+
+mothur > 
+count.seqs(name=current, group=current)
+[WARNING]: no file was saved for group parameter.
+[WARNING]: no file was saved for name parameter.
+You have no current namefile or sharedfile and the name or shared parameter is required.
+
+Using 1 processors.
+[ERROR]: did not complete count.seqs.
+
+mothur > 
+classify.seqs(fasta=current, count=current, template=1806DB.ng.fasta, taxonomy=1806DB.tax, cutoff=90)
+[WARNING]: no file was saved for count parameter.
+[WARNING]: no file was saved for fasta parameter.
+You have no current fastafile and the fasta parameter is required.
+
+Using 1 processors.
+[ERROR]: did not complete classify.seqs.
+
+mothur > 
+get.lineage(fasta=current, count=current, taxonomy=current, taxon=Glomeromycota)
+[WARNING]: no file was saved for count parameter.
+[WARNING]: no file was saved for fasta parameter.
+[WARNING]: no file was saved for taxonomy parameter.
+You have no current taxonomy file and did not provide a constaxonomy file. The taxonomy or constaxonomy parameter is required.
+You must provide one of the following: fasta, name, group, count, alignreport, taxonomy, constaxonomy, shared or listfile.
+[ERROR]: did not complete get.lineage.
+
+mothur > 
+align.seqs(fasta=current, reference=629ref_aln_cut.fas, flip=t)
+[WARNING]: no file was saved for fasta parameter.
+You have no current fastafile and the candidate parameter is required.
+
+Using 1 processors.
+[ERROR]: did not complete align.seqs.
+
+mothur > 
+screen.seqs(fasta=current, count=current, start=4, end=561)
+[WARNING]: no file was saved for count parameter.
+[WARNING]: no file was saved for fasta parameter.
+You have no current fastafile and the fasta parameter is required.
+
+Using 1 processors.
+[ERROR]: did not complete screen.seqs.
+
+mothur > 
+filter.seqs(fasta=current, vertical=T, trump=.)
+[WARNING]: no file was saved for fasta parameter.
+You have no current fastafile and the fasta parameter is required.
+
+Using 1 processors.
+[ERROR]: did not complete filter.seqs.
+
+mothur > 
+unique.seqs(fasta=current, count=current)
+[WARNING]: no file was saved for count parameter.
+[WARNING]: no file was saved for fasta parameter.
+You have no current fastafile and the fasta parameter is required.
+[ERROR]: did not complete unique.seqs.
+
+mothur > 
+pre.cluster(fasta=current, count=current, diffs=3)
+[WARNING]: no file was saved for count parameter.
+[WARNING]: no file was saved for fasta parameter.
+You have no current fastafile and the fasta parameter is required.
+
+Using 1 processors.
+[ERROR]: did not complete pre.cluster.
+
+mothur > 
+split.abund(fasta=current, count=current, cutoff=1, accnos=true)
+[WARNING]: no file was saved for count parameter.
+[WARNING]: no file was saved for fasta parameter.
+You have no current fastafile and the fasta parameter is required.
+You have no current list, count or namefile and one is required.
+[ERROR]: did not complete split.abund.
+
+mothur > 
+chimera.vsearch(fasta=spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta, count=spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table, dereplicate=t)
+Unable to open spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta. Trying default /usr/local/bin/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta
+Unable to open /usr/local/bin/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta. Trying output directory resultados/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta
+Unable to open resultados/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta. It will be disregarded.
+[ERROR]: no valid files.
+Unable to open spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table. Trying default /usr/local/bin/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table
+Unable to open /usr/local/bin/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table. Trying output directory resultados/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table
+Unable to open resultados/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table. It will be disregarded.
+[ERROR]: The reference parameter is a required.
+Using 1 processors.
+/usr/local/bin/vsearch file does not exist. Checking path... 
+[ERROR]:  file does not exist. mothur requires the vsearch executable.
+[ERROR]: did not complete chimera.vsearch.
+
+mothur > 
+remove.seqs(fasta=current, accnos=current)
+[WARNING]: no file was saved for accnos parameter.
+[WARNING]: no file was saved for fasta parameter.
+You have no valid accnos file and accnos is required.
+You must provide at least one of the following: fasta, name, group, taxonomy, quality, alignreport, fastq or list.
+[ERROR]: did not complete remove.seqs.
+
+mothur > 
+cluster(fasta=spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta, count=spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table, method=dgc, cutoff=0.02)
+Unable to open spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta. Trying default /usr/local/bin/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta
+Unable to open /usr/local/bin/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta. Trying mothur's location /usr/local/bin/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta
+Unable to open /usr/local/bin/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta. Trying output directory resultados/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta
+Unable to open resultados/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.fasta
+Unable to open spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table. Trying default /usr/local/bin/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table
+Unable to open /usr/local/bin/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table. Trying mothur's location /usr/local/bin/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table
+Unable to open /usr/local/bin/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table. Trying output directory resultados/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table
+Unable to open resultados/spun.trim.contigs.unique.pick.good.filter.unique.precluster.abund.count_table
+[ERROR]: did not complete cluster.
+
+mothur > 
+make.shared(list=current, count=current, label=0.02)
+[WARNING]: no file was saved for count parameter.
+[WARNING]: no file was saved for list parameter.
+No valid current files. You must provide a list or biom file before you can use the make.shared command.
+[ERROR]: did not complete make.shared.
+
+mothur > 
+get.oturep(fasta=current, list=current, count=current, label=0.02, method=abundance)
+[WARNING]: no file was saved for count parameter.
+[WARNING]: no file was saved for fasta parameter.
+[WARNING]: no file was saved for list parameter.
+You have no current list file and the list parameter is required.
+You need to provide a namefile or countfile if you are going to use the abundance method.
+[ERROR]: did not complete get.oturep.
+
+mothur > quit()
+
+
+************************************************************
+************************************************************
+************************************************************
+Detected 21 [ERROR] messages, please review.
+************************************************************
+************************************************************
+************************************************************
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Detected 26 [WARNING] messages, please review.
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

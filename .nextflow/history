@@ -1,0 +1,10 @@
+2025-03-25 19:10:45	3s	suspicious_mestorf	OK	19409b09eaf0bfcaf4b85ee47d5ce57b	75a93e88-8ff9-4a60-9bff-d010016b5f1c	nextflow run main.nf
+2025-03-25 19:34:13	2.3s	big_booth	OK	19409b09eaf0bfcaf4b85ee47d5ce57b	d0fe1fb9-2439-4191-880d-4ccc55ceca34	nextflow run main.nf
+2025-03-25 19:34:52	3s	lethal_snyder	OK	19409b09eaf0bfcaf4b85ee47d5ce57b	06354ade-3a75-4e47-86e0-ca544777cf2f	nextflow run main.nf
+2025-03-25 19:41:51	2.2s	gloomy_turing	OK	19409b09eaf0bfcaf4b85ee47d5ce57b	eaf91a6a-48fe-4dc8-9465-146a25903d90	nextflow run main.nf -with-docker
+2025-03-25 19:44:19	4.8s	chaotic_faggin	ERR	19409b09eaf0bfcaf4b85ee47d5ce57b	6d970172-350d-4817-bfdc-35b8d365f9fc	nextflow run main.nf -with-docker
+2025-03-25 19:47:31	19.1s	nasty_wegener	ERR	19409b09eaf0bfcaf4b85ee47d5ce57b	cbeb6f4d-68d9-4a0a-9231-8c1d76f5c58a	nextflow run main.nf -with-docker
+2025-03-25 22:12:15	6.4s	golden_brenner	ERR	19409b09eaf0bfcaf4b85ee47d5ce57b	9179c8ac-345a-481d-bef3-51cfeebc7b50	nextflow run main.nf -with-docker
+2025-03-25 22:23:20	6m 55s	cheesy_fermat	ERR	19409b09eaf0bfcaf4b85ee47d5ce57b	94c27e3b-c2f2-42fe-a61d-38a627ddaa3e	nextflow run main.nf -with-docker
+2025-03-25 22:30:25	12m 27s	fabulous_nightingale	ERR	19409b09eaf0bfcaf4b85ee47d5ce57b	9beb5a7a-699d-40ae-96be-b24d480bdf69	nextflow run main.nf -with-docker
+2025-03-25 22:43:25	18m	cranky_poitras	ERR	19409b09eaf0bfcaf4b85ee47d5ce57b	a4b91c91-b8f9-48dc-a1e9-3fcac5b39817	nextflow run main.nf -with-docker

@@ -3,7 +3,7 @@ include { MAFFT_ALIGN } from '../modules/nf-core/mafft/align/main'
 
 workflow CLASSIFICATION {
     // canais de entrada
-    input_dir = Channel.fromFilePairs(params.inputdir)
+    input_dir = Channel.fromFilePairs(params.inputdir, checkIfExists: true)
     output_dir = Channel.fromPath(params.outputdir)
     ref_1806DB_fasta = Channel.fromPath(params.ref_1806DB_fasta)
     ref_1806DB_tax = Channel.fromPath(params.ref_1806DB_tax)
