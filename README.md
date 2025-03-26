@@ -1,6 +1,6 @@
 # Nextaxon
 Nextaxon é um pipeline Nextflow para análise inicial de processamento das sequências, focado em comunidades de Fungos Micorrizicos Arbusculares. 
-  Este pipeline integra ferramentas como Mothur para processamento de sequências e MAFFT para alinhamento.
+  Este pipeline integra ferramentas como Mothur para processamento de sequências e MAFFT para alinhamento das sequencias representativas de FMA.
 
 # Características
 
